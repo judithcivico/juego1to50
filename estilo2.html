@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Juego</title>
+    <style>
+        body{
+            text-align: center;
+            align-items: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(85, 57, 97);
+            padding-top: 100px;
+        }
+        .container {
+            text-align: center;
+            justify-content: center;
+            background-color: rgb(132, 73, 157);
+            width: 450px;
+            height: 540px;
+            padding: 20px 20px;
+            border-radius: 20px;
+            margin-left: 700px;
+        }
+
+        .game-container{
+            background-color: white;
+            margin-left: 10px;
+            width: 420px;
+            height: 420px;
+            padding: 5px 5px;
+            border-radius: 20px;
+        }
+
+        .play-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 400px; 
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .grid-cell {
+            background-color: rgb(132, 73, 157);
+            color: white;
+            height: 30px;
+            width: 30px;
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .transparent-cell {
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco con opacidad 0.5 */
+        }
+
+
+        .logo {
+            height: 80px;
+            text-align: center;
+        }
+
+        .back {
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img class="logo" src="logo_prp.png" alt="logo">
+        </header>
+        <div id="game-container" class="game-container">
+            <div class="play-container" id="play-container">
+               
+            </div>
+        </div>
+    </div>
+    <a class="back" href="main.html">Volver</a>
+    <script src="game.js"></script>
+</body>
+</html>
